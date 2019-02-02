@@ -99,11 +99,17 @@ header {
 	position: fixed;
 	top: 0;
 
+	span {
+		color: #fff;
+		margin: 50px;
+		cursor: pointer;
+	}
+
 	form {
 		width: 300px;
 		height: 300px;
 		background-color: #fff;
-		margin: 0 auto;
+		margin: 10% auto;
 	}
 }
 

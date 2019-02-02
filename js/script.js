@@ -11,28 +11,23 @@ var url = prefix + "http://recruitment-api.pyt1.stg.jmr.pl";
 }*/
 
 
-
-
+document.getElementById('send').addEventListener('click', function(e) {
+	e.preventDefault();
 
 	var params = {
-		login : "correct_login@example.com",
- 		password : "C0rr3Ct_P@55w0rd",
+		login : document.getElementById('login').value,
+ 		password : document.getElementById('password').value
 	}
 
 	var xhr = new XMLHttpRequest();
+
 	xhr.open('POST', url + '/login', true);
-	xhr.setRequestHeader('Content-type', 'application/json');
-	xhr.send(JSON.stringify(params));
+	xhr.setRequestHeader('Content-Type', 'application/json');
 	xhr.onload = function() {
-		if (this.status === 200) {
-			console.log('ok')
-		} else {
-			console.log('not ok')
+			console.log(responseText);
 		}
-	}
-	
-
-
+	xhr.send(JSON.stringify(params));
+});
 
 
 
@@ -42,7 +37,12 @@ function openForm() {
 	form.style.display = 'block';
 }
 
+var close = document.getElementById('close');
 
-document.getElementById('login').addEventListener('click', function() {
+close.onclick = function() {
+	form.style.display = 'none';
+}
+
+document.getElementById('enter').addEventListener('click', function() {
 	openForm();
 });
