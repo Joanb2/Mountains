@@ -229,6 +229,12 @@ footer p.copyright {
     visibility: visible;
     height: auto;
   }
+  footer p.copyright {
+    padding-left: 10px;
+  }
+  footer p.design {
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 599px) {
@@ -248,6 +254,12 @@ footer p.copyright {
   nav img {
     top: 15px;
     left: 5px;
+  }
+  footer p.copyright {
+    padding-left: 25px;
+  }
+  footer p.design {
+    padding-right: 25px;
   }
 }
 

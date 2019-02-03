@@ -240,6 +240,16 @@ footer {
 			height: auto;
 		}
 	}
+
+	footer {
+		p.copyright {
+			padding-left: 10px;
+		}
+
+		p.design {
+			padding-right: 10px;
+		}
+	}
 }
 
 @media (min-width: 481px) and (max-width: 599px) {
@@ -262,6 +272,15 @@ footer {
 		img {
 			top: 15px;
 			left: 5px;
+		}
+	}
+
+	footer {
+		p.copyright {
+			padding-left: 25px;
+		}
+		p.design {
+			padding-right: 25px;
 		}
 	}
 }
